@@ -1,0 +1,196 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.6;
+  background-image: url("logomurni11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+
+.header {
+  padding: 30px 10px;
+  text-align: center;
+  background: white;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-navbar {
+  background-color: white;
+  width: 100%;
+  height: auto;
+}
+
+.ul-navbar {
+  background-color: darkslategrey;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
+
+.li-navbar {
+  margin: 10px 20px;
+  font-size: 1.2rem;
+  color: white;
+  position: relative;
+}
+
+.li-navbar:hover {
+  background-color: #2f4f4f;
+  border-radius: 30px;
+  padding: 5px 15px;
+}
+
+.a-navbar {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+  float: left;
+}
+
+.container-footer {
+  height: 10vh;
+  background-color: darkslategray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.h1-footer {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.container-section {
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section {
+  margin-bottom: 20px;
+  padding: 25px;
+  background-color: transparent;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+article h4 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: darkslategray;
+}
+
+article p {
+  font-size: 1rem;
+  line-height: 1.6;
+  
+}
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 26px;
+}
+
+.column.middle {
+  width: 100%;
+  font-size: 2vh;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  border: 1px solid #333;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: darkslategray;
+  list-style: none;
+  padding: 10px 0;
+  margin-top: 10px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: black;
+}
+
+/* ✅ Tambahkan Media Query untuk Responsif */
+
+@media screen and (max-width: 768px) {
+  .ul-navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .li-navbar {
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+
+  .container-content {
+    height: 60vh;
+    background-size: cover;
+  }
+
+  .h1-footer {
+    font-size: 1.5rem;
+  }
+
+  table, th, td {
+    font-size: 0.9rem;
+  }
+}
